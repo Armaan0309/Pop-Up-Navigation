@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #3c5077;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  padding: 10px 20px;
+  background: #fff;
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.popup {
+  width: 400px;
+  background: #fff;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 20px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s ;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.popup i {
+  border-radius: 50%;
+  font-size: 100px;
+  color: green;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+.popup h2 {
+  font-size: 40px;
+  margin: 20px 0 30px;
+}
+.popup button {
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px 0;
+  background: #50b12d;
+  color: #fff;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
